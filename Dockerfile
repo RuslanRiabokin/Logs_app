@@ -12,6 +12,8 @@ ENV PORT 3000
 
 EXPOSE ${PORT} 
 
+VOLUME [ "/app/data" ]
+
 RUN npm install 
 
 CMD ["node", "app.js"] 
